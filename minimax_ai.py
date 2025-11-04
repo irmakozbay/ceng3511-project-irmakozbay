@@ -2,7 +2,7 @@ import random
 import math
 import numpy as np
 
-from game import rows, columns, empty_cell, players_piece, ai_piece, create_board, drop_piece, valid_loc, next_available_row, is_valid, win_move, terminal_node
+from game import rows, columns, empty_cell, players_piece, ai_piece, drop_piece, next_available_row, is_valid, win_move, terminal_node
 
 window_length = 4
 

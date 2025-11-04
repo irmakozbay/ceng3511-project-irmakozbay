@@ -73,7 +73,7 @@ def main():
 
     if turn == 1 and not game_ended:
       pygame.time.wait(500)
-      col, minimax_score = minimax(board, 4, -math.inf, math.inf, True)
+      col, minimax_score = minimax(board, 6, -math.inf, math.inf, True)
       if col == None:
         col = pick_the_best_loc(board, ai_piece)
       if valid_loc(board, col):
