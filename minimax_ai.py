@@ -82,9 +82,9 @@ def minimax(board, depth, alpha, beta, maximizing):
     for col in valid_locs:
       row = next_available_row(board, col)
       temp = board.copy()
-      drop_piece(temp, row, col, ai_piece)  # ✅ düzeltildi
+      drop_piece(temp, row, col, ai_piece) 
       updated_score = minimax(temp, depth-1, alpha, beta, False)[1]
-      if updated_score > value:  # ✅ düzeltildi
+      if updated_score > value: 
         value = updated_score
         best_col = col
       alpha = max(alpha, value)
